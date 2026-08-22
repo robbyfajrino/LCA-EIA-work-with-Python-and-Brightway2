@@ -1,0 +1,21 @@
+Process,Category,Flow,Flow type,Compartment,Direction,Amount,Unit,Provider,Uncertainty distribution,Comment
+P1_PKM,PKS co-firing/upstream,"Beban hulu PKS teralokasi (ekonomi 3,1%)",Product flow,,Input,641.7,kg,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Neraca massa PKM Mitra A
+P1_PKM,PKS co-firing/upstream,Okupasi lahan kebun sawit teralokasi,Elementary flow,air/unspecified,Input,269.5,m2a,,lognormal,"Produktivitas 3,8 t CPO/ha/th"
+P2_Drying,PKS co-firing/upstream,Panas pengeringan (residu biomassa),Product flow,,Input,545.4,MJ,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Neraca energi dryer
+P2_Drying,PKS co-firing/upstream,Listrik crusher,Product flow,,Input,11.6,kWh,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Nameplate crusher 75 kW
+P2_Drying,PKS co-firing/upstream,CH4 degradasi stockpile PKS,Elementary flow,air/unspecified,Output,0.141,kg,,lognormal,Literatur penyimpanan biomassa
+P3_Transport,PKS co-firing/transport,Angkutan truk diesel 24 t,Product flow,,Input,64.2,t.km,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Surat jalan Jan-Des 2025
+P3_Transport,PKS co-firing/transport,Angkutan tongkang 3000 DWT,Product flow,,Input,0.0,t.km,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Rute darat pada baseline
+P4_Handling,PKS co-firing/core,Listrik conveyor & coal mill,Product flow,,Input,7.1,kWh,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Log pemakaian sendiri PLTU
+P5_Generation,PKS co-firing/core,Batubara sub-bituminus 4200 kcal GAR,Product flow,,Input,589.7,kg,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Coal flow meter unit #2
+P5_Generation,PKS co-firing/core,PKS ke boiler,Product flow,,Input,0.0,kg,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Baseline 0% co-firing
+P5_Generation,PKS co-firing/core,Kapur FGD (limestone),Product flow,,Input,3.4,kg,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Gudang reagen FGD
+P5_Generation,PKS co-firing/core,Air proses & make-up,Product flow,,Input,1.8,m3,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Neraca air WTP
+P5_Generation,PKS co-firing/core,CO2 fosil,Elementary flow,air/unspecified,Output,1031.9,kg,,lognormal,"IPCC 2006: 94,6 kg CO2/GJ"
+P5_Generation,PKS co-firing/core,CO2 biogenik,Elementary flow,air/unspecified,Output,0.0,kg,,lognormal,IPCC 2006: 110 kg CO2/GJ
+P5_Generation,PKS co-firing/core,CH4 pembakaran,Elementary flow,air/unspecified,Output,0.0109,kg,,lognormal,IPCC 2006: 1 g/GJ
+P5_Generation,PKS co-firing/core,N2O pembakaran,Elementary flow,air/unspecified,Output,0.0164,kg,,lognormal,"IPCC 2006: 1,5 g/GJ"
+P5_Generation,PKS co-firing/core,NOx,Elementary flow,air/unspecified,Output,1.62,kg,,lognormal,CEMS unit #2 rata-rata 2025
+P5_Generation,PKS co-firing/core,SO2 pasca-FGD,Elementary flow,air/unspecified,Output,2.15,kg,,lognormal,CEMS + efisiensi FGD 90%
+P5_Generation,PKS co-firing/core,PM2.5,Elementary flow,air/unspecified,Output,0.088,kg,,lognormal,"ESP 99,5%, uji emisi tahunan"
+P6_Ash,PKS co-firing/downstream,Penimbunan FABA terkendali,Product flow,,Input,29.5,kg,ecoinvent 3.10 (proxy) — sesuaikan di OpenLCA,lognormal,Neraca abu landfill B3

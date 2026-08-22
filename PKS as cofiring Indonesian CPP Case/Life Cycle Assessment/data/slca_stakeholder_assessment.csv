@@ -1,0 +1,15 @@
+stakeholder,subcategory,risk_score_1_5,activity_weight,justification,evidence_source,scope
+Pekerja,Keselamatan & kesehatan kerja,4,1.2,Penanganan biomassa menambah risiko kebakaran stockpile dan paparan debu organik.,Risk assessment K3 PLTU 2025,PLTU
+Pekerja,Upah layak,3,1.0,Pekerja PLTU di atas UMK; pekerja kebun pemasok belum terverifikasi.,Data HR + gap pemasok,Rantai pasok
+Pekerja,Jam kerja,2,0.8,"Lembur terkendali, rata-rata 6 jam/bulan.",Absensi 2025,PLTU
+Pekerja,Kebebasan berserikat,2,0.8,Serikat pekerja aktif dan diakui manajemen.,PKB 2024-2026,PLTU
+Masyarakat lokal,Hak atas lahan & konflik agraria,4,1.5,Wilayah pemasok memiliki riwayat sengketa lahan terdokumentasi.,Laporan LSM & catatan sengketa,Rantai pasok
+Masyarakat lokal,Lapangan kerja lokal,2,1.0,Logistik dan pengeringan PKS menyerap tenaga kerja lokal.,Data kontraktor lokal,Rantai pasok
+Masyarakat lokal,Akses sumber daya material (air),3,1.1,Kompetisi air pendingin pada musim kemarau.,Izin SIPA & keluhan warga,PLTU
+Aktor rantai nilai,Transparansi & ketertelusuran pemasok,4,1.3,28% pasokan lewat trader tanpa ketertelusuran ke pabrik asal.,Audit pemasok 2025,Rantai pasok
+Aktor rantai nilai,Persaingan sehat & harga wajar,3,1.0,Harga PKS fluktuatif mengikuti ekspor.,Kontrak pengadaan,Rantai pasok
+Masyarakat luas,Pencegahan kerja anak,4,1.4,Risiko sektoral kerja anak pada panen sawit masih tinggi.,SHDB/PSILCA sektor sawit ID,Rantai pasok
+Masyarakat luas,Kontribusi pembangunan ekonomi,2,1.0,Substitusi impor bahan bakar dan penyerapan residu domestik.,Analisis pengadaan,Nasional
+Masyarakat luas,Korupsi & etika bisnis,3,1.1,Pengadaan trader belum sepenuhnya e-procurement.,Audit internal,PLTU
+Konsumen,Keandalan pasokan listrik,3,1.0,Rasio co-firing tinggi berisiko slagging yang menurunkan availability.,Log operasi boiler,PLTU
+Konsumen,Transparansi informasi keberlanjutan,2,0.9,Laporan keberlanjutan tahunan dipublikasikan.,Sustainability report 2025,Korporat

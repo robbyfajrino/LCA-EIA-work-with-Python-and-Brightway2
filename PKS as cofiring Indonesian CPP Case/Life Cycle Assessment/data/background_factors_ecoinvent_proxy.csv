@@ -1,0 +1,10 @@
+background_key,activity_name,reference_unit,kg_CO2eq_per_unit,kg_SO2eq_per_unit,kg_NOxeq_per_unit,kg_Peq_per_unit,kg_PM25eq_per_unit,database_source
+coal_sub_bituminous,"Batubara sub-bituminus, di gerbang PLTU",kg,0.121,0.00098,0.00042,0.00031,0.0021,"ecoinvent 3.10 proxy — market for hard coal, ID"
+pks_upstream_econ,PKS teralokasi ekonomi di gerbang PKM,kg,0.043,0.00031,0.00018,0.00012,0.0006,Agribalyse/literatur sawit ID
+truck_transport,Truk diesel EURO III >16t,t.km,0.152,0.00088,0.00055,0.00028,0.0018,"ecoinvent 3.10 proxy — transport, freight, lorry"
+barge_transport,Tongkang sungai/pesisir,t.km,0.048,0.00042,0.0006,9e-05,0.0009,"ecoinvent 3.10 proxy — transport, freight, inland waterways"
+electricity_grid_jamali,Listrik grid Jawa-Bali,kWh,0.794,0.0021,0.0013,0.00072,0.0042,Faktor emisi grid Jamali (KESDM)
+lime_fgd,Kapur/limestone untuk FGD,kg,0.098,0.00021,0.00011,5e-05,0.0004,ecoinvent 3.10 proxy — market for limestone
+drying_heat_biomass,Panas dari residu biomassa,MJ,0.0042,9e-05,0.00021,3e-05,0.0002,"Panas biogenik, CO2 fosil rendah"
+ash_landfill,Penimbunan abu terkendali,kg,0.0079,3e-05,2e-05,1e-05,5e-05,ecoinvent 3.10 proxy — inert waste landfill
+water_process,Air proses terolah,m3,0.34,0.00042,0.00021,8e-05,0.0006,"ecoinvent 3.10 proxy — tap water, RoW"

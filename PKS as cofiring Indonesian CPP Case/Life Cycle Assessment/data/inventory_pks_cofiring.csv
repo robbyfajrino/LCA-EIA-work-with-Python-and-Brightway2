@@ -1,0 +1,21 @@
+process_id,stage,flow_name,flow_type,direction,amount_per_MWh,unit,data_source,ped_reliability,ped_completeness,ped_temporal,ped_geographical,ped_technological,functional_unit,scenario,collected_at,collector
+P1_PKM,upstream,"Beban hulu PKS teralokasi (ekonomi 3,1%)",technosphere,input,641.7,kg,Neraca massa PKM Mitra A,4,3,3,2,3,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P1_PKM,upstream,Okupasi lahan kebun sawit teralokasi,elementary,input,269.5,m2a,"Produktivitas 3,8 t CPO/ha/th",4,4,3,2,3,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P2_Drying,upstream,Panas pengeringan (residu biomassa),technosphere,input,545.4,MJ,Neraca energi dryer,4,3,3,3,3,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P2_Drying,upstream,Listrik crusher,technosphere,input,11.6,kWh,Nameplate crusher 75 kW,3,3,2,2,3,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P2_Drying,upstream,CH4 degradasi stockpile PKS,elementary,output,0.141,kg,Literatur penyimpanan biomassa,5,4,4,4,4,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P3_Transport,transport,Angkutan truk diesel 24 t,technosphere,input,64.2,t.km,Surat jalan Jan-Des 2025,2,2,2,2,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P3_Transport,transport,Angkutan tongkang 3000 DWT,technosphere,input,0.0,t.km,Rute darat pada baseline,3,3,3,2,3,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P4_Handling,core,Listrik conveyor & coal mill,technosphere,input,7.1,kWh,Log pemakaian sendiri PLTU,3,3,2,1,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,Batubara sub-bituminus 4200 kcal GAR,technosphere,input,589.7,kg,Coal flow meter unit #2,2,2,1,1,1,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,PKS ke boiler,technosphere,input,0.0,kg,Baseline 0% co-firing,2,2,2,1,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,Kapur FGD (limestone),technosphere,input,3.4,kg,Gudang reagen FGD,3,3,2,2,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,Air proses & make-up,technosphere,input,1.8,m3,Neraca air WTP,3,3,2,2,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,CO2 fosil,elementary,output,1031.9,kg,"IPCC 2006: 94,6 kg CO2/GJ",1,1,1,2,1,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,CO2 biogenik,elementary,output,0.0,kg,IPCC 2006: 110 kg CO2/GJ,2,2,1,2,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,CH4 pembakaran,elementary,output,0.0109,kg,IPCC 2006: 1 g/GJ,3,2,2,3,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,N2O pembakaran,elementary,output,0.0164,kg,"IPCC 2006: 1,5 g/GJ",3,3,2,3,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,NOx,elementary,output,1.62,kg,CEMS unit #2 rata-rata 2025,2,2,2,1,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,SO2 pasca-FGD,elementary,output,2.15,kg,CEMS + efisiensi FGD 90%,2,2,2,1,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P5_Generation,core,PM2.5,elementary,output,0.088,kg,"ESP 99,5%, uji emisi tahunan",3,3,2,2,2,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
+P6_Ash,downstream,Penimbunan FABA terkendali,technosphere,input,29.5,kg,Neraca abu landfill B3,4,3,3,3,3,1 MWh listrik neto ke jaringan,baseline_0pct,2026-02-18,Tim LCA — company visit PLTU Unit #2
