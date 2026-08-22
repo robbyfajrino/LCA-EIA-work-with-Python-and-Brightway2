@@ -1,6 +1,6 @@
 # LCA & EIA work with Python and Brightway
 
-[![PKS co-firing LCA](https://github.com/robbyfajrino/LCA-EIA-work-with-Python/actions/workflows/pks-lca.yml/badge.svg)](https://github.com/robbyfajrino/LCA-EIA-work-with-Python/actions/workflows/pks-lca.yml)
+[![PKS co-firing LCA](https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2/actions/workflows/pks-lca.yml/badge.svg)](https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2/actions/workflows/pks-lca.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Brightway](https://img.shields.io/badge/Brightway-2.5-green)
 ![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)
@@ -21,8 +21,7 @@ ex-ante and prospective LCA require.
 | # | Case | Method stack | Status |
 |---|---|---|---|
 | 01 | **Palm kernel shell (PKS) co-firing in a 300 MW Indonesian sub-critical coal unit** — 0–30 % co-firing on an energy basis, cradle-to-grave fuel chain, ISO 14067 fossil/biogenic split, plus a linked techno-economic assessment | Brightway 2.5, ReCiPe 2016 (H) midpoint, pedigree-based Monte Carlo, OAT + Sobol GSA, switchable marginal-electricity background, LCA/TEA workbook | complete |
-| 02 | *(planned)* Prospective LCA of grid-scale energy storage | Brightway + `premise`, IAM-consistent background | planned |
-| 03 | *(planned)* EIA screening with input–output / EEIO hybridisation | MARIO, Exiobase | planned |
+| 02 | *(planned)* EIA screening with input–output / EEIO hybridisation | MARIO, Exiobase | planned |
 
 ## How to read this repository in five minutes
 
