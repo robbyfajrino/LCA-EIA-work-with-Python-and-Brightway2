@@ -3,7 +3,6 @@
 [![PKS co-firing LCA](https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2/actions/workflows/pks-lca.yml/badge.svg)](https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2/actions/workflows/pks-lca.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Brightway](https://img.shields.io/badge/Brightway-2.5-green)
-![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)
 
 A working collection of **life cycle assessment (LCA)** and **environmental
 impact assessment (EIA)** case studies built as code — Python, Brightway,
@@ -79,20 +78,14 @@ ILCD/Weidema pedigree matrix for data-quality uncertainty.
 
 ## Author
 
-**Robby Fajrino Nugroho** — MSc Environmental Technology and Engineering
-(Erasmus Mundus: IHE Delft · Ghent University · UCT Prague), BSc Chemistry
-(Universitas Indonesia). Sustainability data analyst working on GHG inventories,
+**Robby Fajrino Nugraha** — MSc Environmental Technology and Engineering
+(Erasmus Mundus: IHE Delft · Ghent University · UCT Prague),
+BSc Chemistry (Universitas Indonesia). Sustainability data analyst working on GHG inventories,
 product carbon footprints and LCA in Indonesia.
 
 - Portfolio: https://robby-fajrino.lovable.app
-- LinkedIn: https://www.linkedin.com/in/robbyfajrino
+- LinkedIn: https://www.linkedin.com/in/robbyfnugraha
 - Contact: see the portfolio site
 
-## Licence and citation
-
-Code released under the MIT Licence. If you use the method or the scenario model,
-please cite the repository (see `CITATION.cff`):
-
-> Nugroho, R. F. (2026). *LCA & EIA work with Python and Brightway* (Version 1.0)
 > [Computer software]. GitHub.
 > https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2
