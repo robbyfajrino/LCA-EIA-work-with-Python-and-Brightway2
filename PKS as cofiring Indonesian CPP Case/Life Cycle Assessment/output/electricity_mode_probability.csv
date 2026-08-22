@@ -1,0 +1,6 @@
+scenario,average_time_of_use,marginal_time_of_use,marginal_time_of_construction,marginal_decarbonising_2040
+baseline_0pct,0.0,0.0,0.0,0.0
+cofire_5pct,0.535,0.535,0.535,0.535
+cofire_10pct,0.595,0.595,0.595,0.6
+cofire_20pct,0.69,0.69,0.69,0.69
+cofire_30pct_barge,0.785,0.785,0.785,0.785
