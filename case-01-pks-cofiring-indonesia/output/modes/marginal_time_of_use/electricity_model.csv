@@ -1,0 +1,2 @@
+mode,label,gwp_kg_per_kWh,co_scale,source
+marginal_time_of_use,"Marginal supplier, time of use (2025-2035 operation)",0.902,1.12,Coal condensing units set the dispatch margin in RUPTL 2021-2030 base case
