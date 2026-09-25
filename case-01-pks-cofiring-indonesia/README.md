@@ -34,7 +34,7 @@ GWP100) rather than netted into the headline figure.
 ### Google Colab
 
 ```python
-!git clone https://github.com/<username>/pks-cofiring-brightway.git
+!git clone https://github.com/robbyfajrino/pks-cofiring-brightway.git
 %cd pks-cofiring-brightway
 !pip install -q -r requirements.txt
 # then open notebooks/PKS_Cofiring_Brightway.ipynb
