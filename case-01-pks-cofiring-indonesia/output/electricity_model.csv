@@ -1,0 +1,2 @@
+mode,label,gwp_kg_per_kWh,co_scale,source
+average_time_of_use,"Attributional grid average (time of use, 2025)",0.794,1.0,KESDM Jamali grid emission factor 2025
