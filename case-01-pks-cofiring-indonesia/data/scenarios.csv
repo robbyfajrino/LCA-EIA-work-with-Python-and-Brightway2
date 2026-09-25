@@ -1,0 +1,6 @@
+scenario,cofiring_pct_energy,truck_km,barge_km,efficiency_penalty_pct,net_efficiency_pct
+baseline_0pct,0,100,0,0.0,33.0
+cofire_5pct,5,100,0,1.0,32.7
+cofire_10pct,10,100,0,2.0,32.3
+cofire_20pct,20,150,0,4.0,31.7
+cofire_30pct_barge,30,60,350,6.0,31.0

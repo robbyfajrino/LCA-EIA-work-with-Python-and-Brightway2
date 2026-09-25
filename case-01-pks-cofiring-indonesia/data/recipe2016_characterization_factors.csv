@@ -1,0 +1,15 @@
+flow_name,compartment,impact_category,cf_midpoint,cf_unit,endpoint_area,cf_endpoint,endpoint_unit
+CO2 fosil,air,GWP100 (climate change),1.0,kg CO2-eq/kg,human health,9.28e-07,DALY/kg CO2-eq
+CO2 biogenik,air,GWP100 (climate change),0.0,kg CO2-eq/kg,human health,9.28e-07,DALY/kg CO2-eq
+CH4 fosil,air,GWP100 (climate change),29.8,kg CO2-eq/kg,human health,9.28e-07,DALY/kg CO2-eq
+CH4 biogenik,air,GWP100 (climate change),27.0,kg CO2-eq/kg,human health,9.28e-07,DALY/kg CO2-eq
+N2O,air,GWP100 (climate change),273.0,kg CO2-eq/kg,human health,9.28e-07,DALY/kg CO2-eq
+SO2,air,Terrestrial acidification,1.0,kg SO2-eq/kg,ecosystems,2.12e-07,species.yr/kg SO2-eq
+NOx,air,Terrestrial acidification,0.36,kg SO2-eq/kg,ecosystems,2.12e-07,species.yr/kg SO2-eq
+NOx,air,Photochemical ozone formation,1.0,kg NOx-eq/kg,human health,9.1e-07,DALY/kg NOx-eq
+SO2,air,Fine particulate matter formation,0.29,kg PM2.5-eq/kg,human health,0.000629,DALY/kg PM2.5-eq
+NOx,air,Fine particulate matter formation,0.11,kg PM2.5-eq/kg,human health,0.000629,DALY/kg PM2.5-eq
+PM2.5,air,Fine particulate matter formation,1.0,kg PM2.5-eq/kg,human health,0.000629,DALY/kg PM2.5-eq
+Fosfat ke air,water,Freshwater eutrophication,1.0,kg P-eq/kg,ecosystems,6.1e-07,species.yr/kg P-eq
+Okupasi lahan kebun sawit teralokasi,raw,Land use,1.0,m2a crop-eq,ecosystems,8.88e-09,species.yr/m2a
+Air proses & make-up,raw,Water consumption,1.0,m3,human health,2.22e-06,DALY/m3

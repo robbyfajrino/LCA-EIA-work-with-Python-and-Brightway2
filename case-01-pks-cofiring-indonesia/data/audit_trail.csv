@@ -1,0 +1,11 @@
+timestamp,user,action,target,old_value,new_value,note,dataset_version
+2026-02-16 08:40,tim.lca@konsultan.id,create,project,PKS Co-firing PLTU Unit #2,-,Proyek dibuat,v0.1
+2026-02-16 09:15,tim.lca@konsultan.id,update,scope.functional_unit,-,1 MWh listrik neto,FU disepakati saat kickoff,v0.1
+2026-02-18 10:05,eng.pltu@pln-sub.co.id,upload,inventory.coal_consumption,-,"589,7 kg/MWh",Data coal flow meter unit #2,v0.2
+2026-02-18 13:22,eng.pltu@pln-sub.co.id,upload,inventory.CEMS,-,"NOx 1,62 kg/MWh",Rata-rata CEMS 2025,v0.2
+2026-02-20 09:00,tim.lca@konsultan.id,update,scope.allocation_method,mass,economic,"Harga PKS vs CPO/PKO, sesuai ISO 14044 4.3.4.2",v0.3
+2026-02-24 15:30,qa.reviewer@konsultan.id,review,inventory.pks_upstream,"641,7 kg","641,7 kg",Diverifikasi terhadap neraca massa PKM,v0.3
+2026-03-02 11:10,tim.lca@konsultan.id,update,lcia.method,CML 2001,ReCiPe 2016 (H) midpoint+endpoint,Permintaan klien untuk endpoint,v0.4
+2026-03-05 16:45,lab@vendor.co.id,upload,fuel_quality,-,40 sampel,Hasil lab batubara & PKS,v0.4
+2026-03-09 09:20,tim.lca@konsultan.id,add,scenario,-,0/5/10/20/30% co-firing,Skenario disetujui klien,v0.5
+2026-03-14 14:00,qa.reviewer@konsultan.id,approve,report,draft,final-draft,Siap critical review pihak ketiga,v1.0
