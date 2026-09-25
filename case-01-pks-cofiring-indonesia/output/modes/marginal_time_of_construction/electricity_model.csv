@@ -1,0 +1,2 @@
+mode,label,gwp_kg_per_kWh,co_scale,source
+marginal_time_of_construction,"Marginal supplier, time of construction (2024 retrofit)",0.861,1.07,"Build-year marginal mix, coal-dominated with gas peaking"

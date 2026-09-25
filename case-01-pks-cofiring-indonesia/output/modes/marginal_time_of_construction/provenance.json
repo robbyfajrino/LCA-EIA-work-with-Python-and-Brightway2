@@ -1,0 +1,397 @@
+{
+  "run": {
+    "timestamp_utc": "2026-08-20 12:41:06",
+    "functional_unit": "1 MWh net electricity delivered to the Java-Bali grid",
+    "system_boundary": "Cradle-to-grave for the fuel supply and conversion service: allocated palm kernel shell (PKS) upstream burden, drying and size reduction, transport (truck and barge), on-site handling, boiler combustion in a 300 MW sub-critical PLTU unit, FGD reagent supply, process water, and controlled ash (FABA) landfilling. Plant construction and decommissioning are excluded (cut-off), consistent with the original ISO 14067 study.",
+    "monte_carlo_iterations": 200,
+    "monte_carlo_seed": 42,
+    "sobol_base_samples": 32,
+    "python": "3.13.12",
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.40"
+  },
+  "code": {
+    "git": {
+      "commit": "63ed1f167f7bc1664b478f2d1a0c63715cb9528f",
+      "short_commit": "63ed1f16",
+      "branch": "edit/edt-644c0ab4-8511-433d-8c65-b1e2c51e9611",
+      "dirty": true
+    },
+    "packages": {
+      "bw2data": "4.7",
+      "bw2calc": "2.5.0",
+      "bw2io": "0.9.17",
+      "stats_arrays": "2.0",
+      "numpy": "2.4.3",
+      "pandas": "3.0.3",
+      "matplotlib": "3.11.1",
+      "SALib": "1.5.2",
+      "plotly": "6.9.0"
+    },
+    "sources": {
+      "src/config.py": {
+        "path": "/dev-server/pks-cofiring-brightway/src/config.py",
+        "exists": true,
+        "bytes": 10626,
+        "sha256": "6c1b35737efc2621bb49b55f0f4e87f2d2d446f839a7e2169afd0196f01a28a5",
+        "modified_utc": "2026-08-20 12:26:25"
+      },
+      "src/scenarios.py": {
+        "path": "/dev-server/pks-cofiring-brightway/src/scenarios.py",
+        "exists": true,
+        "bytes": 6385,
+        "sha256": "5d25fc6e4f373af3cf753b271fe8fe691efa150df83e0fed1e953ac90c4522d2",
+        "modified_utc": "2026-08-20 12:32:58"
+      },
+      "src/build_project.py": {
+        "path": "/dev-server/pks-cofiring-brightway/src/build_project.py",
+        "exists": true,
+        "bytes": 8452,
+        "sha256": "0de2d0008494cdb3823ac9079396e60965da4496c9435977ad43237f84ca818e",
+        "modified_utc": "2026-08-20 12:32:58"
+      },
+      "src/methods.py": {
+        "path": "/dev-server/pks-cofiring-brightway/src/methods.py",
+        "exists": true,
+        "bytes": 2732,
+        "sha256": "69f881ad272531fe430bb98322788663574043a2ce64090029ba87a244d85726",
+        "modified_utc": "2026-08-20 12:32:58"
+      },
+      "src/pedigree.py": {
+        "path": "/dev-server/pks-cofiring-brightway/src/pedigree.py",
+        "exists": true,
+        "bytes": 2806,
+        "sha256": "5a1a0d8cd0cc5329ce9fe6d5b7c5dd838b5108b062c60d34f56b757238a8de46",
+        "modified_utc": "2026-08-20 12:32:58"
+      },
+      "src/analysis.py": {
+        "path": "/dev-server/pks-cofiring-brightway/src/analysis.py",
+        "exists": true,
+        "bytes": 13953,
+        "sha256": "e9a765a958cf0be008e72091fe3aa630e3c47a47ee33cbad87f8f81ecbda657e",
+        "modified_utc": "2026-08-20 12:32:58"
+      },
+      "src/datasets.py": {
+        "path": "/dev-server/pks-cofiring-brightway/src/datasets.py",
+        "exists": true,
+        "bytes": 5956,
+        "sha256": "dfe22d2d1b327cea6568c5e06e2c085153857958258ba54786718a59e3969ed8",
+        "modified_utc": "2026-08-20 12:32:58"
+      }
+    }
+  },
+  "data": {
+    "source": "CSV folder /dev-server/pks-cofiring-brightway/data",
+    "digest": "79f583907feb",
+    "tables": {
+      "scenarios": {
+        "path": "/dev-server/pks-cofiring-brightway/data/scenarios.csv",
+        "exists": true,
+        "bytes": 249,
+        "sha256": "265b4bcfe6ef949dbd0210a757294ec954cad31890dec00fdb6b5d42c089fb10",
+        "modified_utc": "2026-08-20 12:26:25",
+        "default_file": "scenarios",
+        "rows": 5,
+        "columns": [
+          "scenario",
+          "cofiring_pct_energy",
+          "truck_km",
+          "barge_km",
+          "efficiency_penalty_pct",
+          "net_efficiency_pct"
+        ]
+      },
+      "background": {
+        "path": "/dev-server/pks-cofiring-brightway/data/background_factors_ecoinvent_proxy.csv",
+        "exists": true,
+        "bytes": 1297,
+        "sha256": "da0c7f45e5dafb679a6ba11ca39a0927ea9bc071be88e0b0e0e6e8a9dd65fcd3",
+        "modified_utc": "2026-08-20 12:26:25",
+        "default_file": "background_factors_ecoinvent_proxy",
+        "rows": 9,
+        "columns": [
+          "background_key",
+          "activity_name",
+          "reference_unit",
+          "kg_CO2eq_per_unit",
+          "kg_SO2eq_per_unit",
+          "kg_NOxeq_per_unit",
+          "kg_Peq_per_unit",
+          "kg_PM25eq_per_unit",
+          "database_source"
+        ]
+      },
+      "characterization": {
+        "path": "/dev-server/pks-cofiring-brightway/data/recipe2016_characterization_factors.csv",
+        "exists": true,
+        "bytes": 1422,
+        "sha256": "dce4035352e148cae6bdc2ddb27e75f4f2f038d27803b1a6d0a5212bad4f3657",
+        "modified_utc": "2026-08-20 12:26:25",
+        "default_file": "recipe2016_characterization_factors",
+        "rows": 14,
+        "columns": [
+          "flow_name",
+          "compartment",
+          "impact_category",
+          "cf_midpoint",
+          "cf_unit",
+          "endpoint_area",
+          "cf_endpoint",
+          "endpoint_unit"
+        ]
+      },
+      "inventory": {
+        "path": "/dev-server/pks-cofiring-brightway/data/inventory_pks_cofiring.csv",
+        "exists": true,
+        "bytes": 4158,
+        "sha256": "808a9f233d22772a8f31a9fb16546a46997776ea4578055e78ccd6cbfd39b131",
+        "modified_utc": "2026-08-20 12:26:25",
+        "default_file": "inventory_pks_cofiring",
+        "rows": 20,
+        "columns": [
+          "process_id",
+          "stage",
+          "flow_name",
+          "flow_type",
+          "direction",
+          "amount_per_MWh",
+          "unit",
+          "data_source",
+          "ped_reliability",
+          "ped_completeness",
+          "ped_temporal",
+          "ped_geographical",
+          "ped_technological",
+          "functional_unit",
+          "scenario",
+          "collected_at",
+          "collector"
+        ]
+      },
+      "fuel_quality": {
+        "path": "/dev-server/pks-cofiring-brightway/data/fuel_quality_lab_results.csv",
+        "exists": true,
+        "bytes": 4021,
+        "sha256": "7ffbc59ca251b9fdc82eae6d27a5df2a74f858b06f956e69b71451d60d6e6b19",
+        "modified_utc": "2026-08-20 12:26:25",
+        "default_file": "fuel_quality_lab_results",
+        "rows": 40,
+        "columns": [
+          "sample_id",
+          "sample_date",
+          "fuel_type",
+          "supplier",
+          "moisture_pct_ar",
+          "ash_pct_db",
+          "sulphur_pct_db",
+          "nitrogen_pct_db",
+          "chlorine_pct_db",
+          "LHV_MJ_per_kg",
+          "lab_method"
+        ]
+      }
+    }
+  },
+  "electricity_model": {
+    "mode": "marginal_time_of_construction",
+    "label": "Marginal supplier, time of construction (2024 retrofit)",
+    "gwp_kg_per_kWh": 0.861,
+    "co_scale": 1.07,
+    "source": "Build-year marginal mix, coal-dominated with gas peaking"
+  },
+  "parameters": {
+    "lhv_coal_MJ_per_kg": {
+      "value": 18.626,
+      "source": "lab mean, sub-bituminous 4200 kcal GAR"
+    },
+    "lhv_pks_MJ_per_kg": {
+      "value": 17.035,
+      "source": "lab mean, PKS as received"
+    },
+    "ash_coal_frac": {
+      "value": 0.055295,
+      "source": "lab mean, dry basis"
+    },
+    "ash_pks_frac": {
+      "value": 0.030115,
+      "source": "lab mean, dry basis"
+    },
+    "s_coal_frac": {
+      "value": 0.0040965,
+      "source": "lab mean, dry basis"
+    },
+    "s_pks_frac": {
+      "value": 0.0004885,
+      "source": "lab mean, dry basis"
+    },
+    "n_coal_frac": {
+      "value": 0.0095485,
+      "source": "lab mean, dry basis"
+    },
+    "n_pks_frac": {
+      "value": 0.004059,
+      "source": "lab mean, dry basis"
+    },
+    "co2_coal_kg_per_GJ": {
+      "value": 94.6,
+      "source": "IPCC 2006, sub-bituminous coal"
+    },
+    "co2_pks_kg_per_GJ": {
+      "value": 110.0,
+      "source": "IPCC 2006, other primary solid biomass (biogenic)"
+    },
+    "ch4_kg_per_GJ": {
+      "value": 0.001,
+      "source": "IPCC 2006, 1 g CH4/GJ"
+    },
+    "n2o_kg_per_GJ": {
+      "value": 0.0015,
+      "source": "IPCC 2006, 1.5 g N2O/GJ"
+    },
+    "nox_coal_kg_per_GJ": {
+      "value": 0.1485,
+      "source": "CEMS Unit #2 annual mean 2025"
+    },
+    "so2_coal_kg_per_GJ": {
+      "value": 0.19708,
+      "source": "CEMS + 90 % FGD removal"
+    },
+    "pm25_coal_kg_per_GJ": {
+      "value": 0.008067,
+      "source": "annual stack test, ESP 99.5 %"
+    },
+    "ash_capture_frac": {
+      "value": 0.905,
+      "source": "ash balance, B3 landfill weighbridge"
+    },
+    "limestone_kg_per_kg_S": {
+      "value": 1.407,
+      "source": "FGD reagent store issue records"
+    },
+    "aux_kWh_per_kg_fuel": {
+      "value": 0.01204,
+      "source": "own-use log, conveyor and coal mill"
+    },
+    "water_m3_per_MJ_fuel": {
+      "value": 0.000165,
+      "source": "WTP water balance"
+    },
+    "pks_upstream_kg_per_kg": {
+      "value": 1.0,
+      "source": "economic allocation 3.1 % embedded in background dataset"
+    },
+    "drying_heat_MJ_per_kg": {
+      "value": 0.85,
+      "source": "dryer energy balance"
+    },
+    "crusher_kWh_per_kg": {
+      "value": 0.01808,
+      "source": "crusher nameplate 75 kW and throughput log"
+    },
+    "stockpile_ch4_kg_per_kg": {
+      "value": 0.00021973,
+      "source": "biomass storage literature"
+    },
+    "land_m2a_per_kg": {
+      "value": 0.42,
+      "source": "3.8 t CPO/ha/yr productivity, allocated"
+    }
+  },
+  "derived_pks_scaling": {
+    "nox": 0.4250929465361052,
+    "so2": 0.11924813865494933,
+    "pm25": 0.5446242879102994
+  },
+  "brightway_mapping": {
+    "project": "pks-cofiring-lca",
+    "databases": {
+      "biosphere": "pks-biosphere",
+      "background": "pks-background-proxy",
+      "foreground": "pks-foreground"
+    },
+    "method_family": [
+      "ReCiPe 2016 v1.03 (proxy)",
+      "midpoint (H)"
+    ],
+    "technosphere_map": {
+      "PKS upstream, economically allocated": "pks_upstream_econ",
+      "Drying heat from biomass residue": "drying_heat_biomass",
+      "Crusher electricity": "electricity_grid_jamali",
+      "Truck transport, diesel 24 t": "truck_transport",
+      "Barge transport, 3000 DWT": "barge_transport",
+      "Conveyor and coal mill electricity": "electricity_grid_jamali",
+      "Sub-bituminous coal, 4200 kcal GAR": "coal_sub_bituminous",
+      "FGD limestone": "lime_fgd",
+      "Process and make-up water": "water_process",
+      "Controlled FABA landfilling": "ash_landfill"
+    },
+    "aggregated_background_flows": {
+      "kg_CO2eq_per_unit": {
+        "flow": "Aggregated background burden, GWP100",
+        "impact_category": "GWP100 (climate change)",
+        "unit": "kg CO2-eq"
+      },
+      "kg_SO2eq_per_unit": {
+        "flow": "Aggregated background burden, acidification",
+        "impact_category": "Terrestrial acidification",
+        "unit": "kg SO2-eq"
+      },
+      "kg_NOxeq_per_unit": {
+        "flow": "Aggregated background burden, ozone formation",
+        "impact_category": "Photochemical ozone formation",
+        "unit": "kg NOx-eq"
+      },
+      "kg_Peq_per_unit": {
+        "flow": "Aggregated background burden, eutrophication",
+        "impact_category": "Freshwater eutrophication",
+        "unit": "kg P-eq"
+      },
+      "kg_PM25eq_per_unit": {
+        "flow": "Aggregated background burden, particulate matter",
+        "impact_category": "Fine particulate matter formation",
+        "unit": "kg PM2.5-eq"
+      }
+    },
+    "biosphere_flows": {
+      "CO2 fosil": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "CO2 biogenik": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "CH4 fosil": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "CH4 biogenik": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "N2O": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "NOx": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "SO2": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "PM2.5": {
+        "compartment": "air",
+        "unit": "kg"
+      },
+      "Okupasi lahan kebun sawit teralokasi": {
+        "compartment": "raw",
+        "unit": "m2a"
+      },
+      "Air proses & make-up": {
+        "compartment": "raw",
+        "unit": "m3"
+      }
+    }
+  }
+}
