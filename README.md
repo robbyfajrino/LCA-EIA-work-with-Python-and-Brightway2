@@ -83,7 +83,7 @@ BSc Chemistry (Universitas Indonesia). Sustainability data analyst working on GH
 product carbon footprints and LCA in Indonesia.
 
 - LinkedIn: https://www.linkedin.com/in/robbyfnugraha
-- Contact: see the portfolio site
+- Contact: robby.fajrino@alumni.ui.ac.id
 
 > [Computer software]. GitHub.
 > https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2
