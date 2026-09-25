@@ -23,7 +23,7 @@ ex-ante and prospective LCA require.
 
 ## How to read this repository in five minutes
 
-1. Open the case folder [`case-01-pks-cofiring-indonesia/`](case-01-pks-cofiring-indonesia/)
+1. Open the case folder [`case-01-pks-cofiring-indonesia/](case-01-pks-cofiring-indonesia/)
    and read its `README.md` — goal, scope, functional unit, headline results.
 2. Look at `docs/` for the rendered **LCA / carbon footprint / TEA reports** and the
    `output/pks_cofiring_report.pdf` generated directly by the code.
@@ -82,7 +82,6 @@ ILCD/Weidema pedigree matrix for data-quality uncertainty.
 BSc Chemistry (Universitas Indonesia). Sustainability data analyst working on GHG inventories,
 product carbon footprints and LCA in Indonesia.
 
-- Portfolio: https://robby-fajrino.lovable.app
 - LinkedIn: https://www.linkedin.com/in/robbyfnugraha
 - Contact: see the portfolio site
 
