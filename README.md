@@ -1,6 +1,5 @@
 # LCA & EIA work with Python and Brightway
 
-[![PKS co-firing LCA](https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2/actions/workflows/pks-lca.yml/badge.svg)](https://github.com/robbyfajrino/LCA-EIA-work-with-Python-and-Brightway2/actions/workflows/pks-lca.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![Brightway](https://img.shields.io/badge/Brightway-2.5-green)
 
